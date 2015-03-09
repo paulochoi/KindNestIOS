@@ -79,7 +79,7 @@
                                 </connections>
                             </mapView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-Z3-rZt">
-                                <rect key="frame" x="532" y="69" width="60" height="60"/>
+                                <rect key="frame" x="532" y="69" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Shf-Fm-2cB"/>
                                     <constraint firstAttribute="width" constant="52" id="Zxf-2P-mTg"/>

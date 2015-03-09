@@ -25,7 +25,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         //rounded profile pic
         //self.currentPhoto.layer.cornerRadius = self.currentPhoto.frame.size.width / 2;
-        self.currentPhoto.layer.cornerRadius = (self.currentPhoto.frame.size.width / 2) - 8;
+        self.currentPhoto.layer.cornerRadius = (self.currentPhoto.frame.size.width / 2) - 9;
         self.currentPhoto.clipsToBounds = true;
         self.currentPhoto.layer.borderWidth = 3.0;
         self.currentPhoto.layer.borderColor = UIColor.whiteColor().CGColor;
