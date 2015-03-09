@@ -12,17 +12,56 @@ import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    @IBOutlet weak var userMap: MKMapView!
+    
+    @IBOutlet weak var currentPhoto: UIImageView!
+    
+    var currentUser : PFUser?
+    
     var manager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //rounded profile pic
+        self.currentPhoto.layer.cornerRadius = self.currentPhoto.frame.size.width / 2;
+        self.currentPhoto.clipsToBounds = true;
+        self.currentPhoto.layer.borderWidth = 3.0;
+        self.currentPhoto.layer.borderColor = UIColor.whiteColor().CGColor;
+
+        
+        //println("Current user is \(currentUser)")
+        //println(PFFacebookUtils.session())
+        
+        var FBSession = PFFacebookUtils.session()
+        var accessToken = FBSession.accessTokenData.accessToken
+        //println(accessToken)
+
+        let url = NSURL(string: "https://graph.facebook.com/me/picture?type=small&return_ssl_resources=1&access_token=" + accessToken)
+
+        var urlRequest = NSURLRequest(URL: url!)
+        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
+            response,data,error in
+
+            var image : UIImage
+
+            image = UIImage(data: data)!
+
+            println(image)
+
+            self.currentPhoto.image = image
+
+        })
+        
+        //self.performSegueWithIdentifier("goToMap", sender: sender)
+        
+        //currentPhoto.image = userPhoto!
         
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingHeading()
         
-
         // Do any additional setup after loading the view.
     }
 

@@ -30,6 +30,7 @@
 		735889261AABF17600A07D5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 735889251AABF17600A07D5C /* libsqlite3.dylib */; };
 		7358892A1AABF5FC00A07D5C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735889291AABF5FC00A07D5C /* Bolts.framework */; };
 		7358892E1AAC0CF600A07D5C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358892D1AAC0CF600A07D5C /* MapViewController.swift */; };
+		735889301AACF83E00A07D5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7358892F1AACF83E00A07D5C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		735889251AABF17600A07D5C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		735889291AABF5FC00A07D5C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		7358892D1AAC0CF600A07D5C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7358892F1AACF83E00A07D5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735889301AACF83E00A07D5C /* MapKit.framework in Frameworks */,
 				7358892A1AABF5FC00A07D5C /* Bolts.framework in Frameworks */,
 				735889261AABF17600A07D5C /* libsqlite3.dylib in Frameworks */,
 				735889241AABF16E00A07D5C /* libz.dylib in Frameworks */,
@@ -109,6 +112,7 @@
 		735888D31AABD16E00A07D5C = {
 			isa = PBXGroup;
 			children = (
+				7358892F1AACF83E00A07D5C /* MapKit.framework */,
 				735889251AABF17600A07D5C /* libsqlite3.dylib */,
 				735889231AABF16E00A07D5C /* libz.dylib */,
 				735889211AABF16600A07D5C /* SystemConfiguration.framework */,
