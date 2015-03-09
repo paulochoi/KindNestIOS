@@ -24,7 +24,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.viewDidLoad()
         
         //rounded profile pic
-        self.currentPhoto.layer.cornerRadius = self.currentPhoto.frame.size.width / 2;
+        //self.currentPhoto.layer.cornerRadius = self.currentPhoto.frame.size.width / 2;
+        self.currentPhoto.layer.cornerRadius = (self.currentPhoto.frame.size.width / 2) - 8;
         self.currentPhoto.clipsToBounds = true;
         self.currentPhoto.layer.borderWidth = 3.0;
         self.currentPhoto.layer.borderColor = UIColor.whiteColor().CGColor;
@@ -37,7 +38,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         var accessToken = FBSession.accessTokenData.accessToken
         //println(accessToken)
 
-        let url = NSURL(string: "https://graph.facebook.com/me/picture?type=small&return_ssl_resources=1&access_token=" + accessToken)
+        let url = NSURL(string: "https://graph.facebook.com/me/picture?type=normal&return_ssl_resources=1&access_token=" + accessToken)
 
         var urlRequest = NSURLRequest(URL: url!)
         NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {

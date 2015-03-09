@@ -28,7 +28,11 @@ class ViewController: UIViewController {
                     
                     self.copyUser = user
                     
+                    
                     println(self.copyUser)
+                    
+                    self.performSegueWithIdentifier("goToMap", sender: self)
+
                     
 //                    var FBSession = PFFacebookUtils.session()
 //                    var accessToken = FBSession.accessTokenData.accessToken
@@ -50,7 +54,6 @@ class ViewController: UIViewController {
                     
 //                    })
                     
-                    self.performSegueWithIdentifier("goToMap", sender: sender)
                 }
             } else {
                 println("Uh oh. The user cancelled the Facebook login.")
@@ -79,7 +82,11 @@ class ViewController: UIViewController {
         
         if segue.identifier == "goToMap" {
             var seguetoMap = segue.destinationViewController as MapViewController
+            println("im here")
             //seguetoMap.currentUser = copyUser
+        }
+        else {
+            println("nooooo")
         }
     }
 
