@@ -47,7 +47,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="ant-Qc-KLH" kind="show" identifier="goToMap" id="NwE-MO-INA"/>
+                        <segue destination="JYB-wH-Xur" kind="show" identifier="goToMap" id="QWi-cU-WPq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,6 +72,12 @@
                                     <navigationItem title="KINDNEST" id="YBA-PP-fxW"/>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n94-7Z-4BN">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ant-Qc-KLH" id="G2Z-jU-vhF"/>
+                                </connections>
+                            </mapView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-Z3-rZt">
                                 <rect key="frame" x="532" y="69" width="60" height="60"/>
                                 <constraints>
@@ -79,12 +85,6 @@
                                     <constraint firstAttribute="width" constant="52" id="Zxf-2P-mTg"/>
                                 </constraints>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n94-7Z-4BN">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <connections>
-                                    <outlet property="delegate" destination="ant-Qc-KLH" id="G2Z-jU-vhF"/>
-                                </connections>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -107,12 +107,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ox5-Xk-MRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="536"/>
+            <point key="canvasLocation" x="2112" y="338"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="a3S-9r-qtY">
             <objects>
-                <viewController id="DH4-sd-xvz" sceneMemberID="viewController">
+                <viewController id="DH4-sd-xvz" customClass="TableViewController" customModule="KindNest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8co-YO-oQc"/>
                         <viewControllerLayoutGuide type="bottom" id="Ok4-yZ-G8G"/>
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUW-G3-urI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="1289"/>
+            <point key="canvasLocation" x="2112" y="1076"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ph2-fs-ihQ">
@@ -150,20 +150,17 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ant-Qc-KLH" kind="relationship" relationship="viewControllers" id="l0K-pH-B9x"/>
+                        <segue destination="ant-Qc-KLH" kind="relationship" relationship="viewControllers" id="nUL-GR-DMO"/>
                         <segue destination="DH4-sd-xvz" kind="relationship" relationship="viewControllers" id="3ER-nF-ffO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAk-lf-e1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2196" y="863"/>
+            <point key="canvasLocation" x="1379" y="536"/>
         </scene>
     </scenes>
     <resources>
         <image name="Vk9SO" width="300" height="46"/>
         <image name="kindness-heart-image-orgspring" width="1600" height="900"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="l0K-pH-B9x"/>
-    </inferredMetricsTieBreakers>
 </document>

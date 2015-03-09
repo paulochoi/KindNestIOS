@@ -31,6 +31,7 @@
 		7358892A1AABF5FC00A07D5C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735889291AABF5FC00A07D5C /* Bolts.framework */; };
 		7358892E1AAC0CF600A07D5C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358892D1AAC0CF600A07D5C /* MapViewController.swift */; };
 		735889301AACF83E00A07D5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7358892F1AACF83E00A07D5C /* MapKit.framework */; };
+		73DEA1F01AAD2F2100A4712A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEA1EF1AAD2F2100A4712A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		735889291AABF5FC00A07D5C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		7358892D1AAC0CF600A07D5C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7358892F1AACF83E00A07D5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		73DEA1EF1AAD2F2100A4712A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				7358892D1AAC0CF600A07D5C /* MapViewController.swift */,
 				735889061AABEF8000A07D5C /* FacebookSDK.framework */,
 				735888E81AABD16E00A07D5C /* Main.storyboard */,
+				73DEA1EF1AAD2F2100A4712A /* TableViewController.swift */,
 				735888EB1AABD16E00A07D5C /* Images.xcassets */,
 				735888ED1AABD16E00A07D5C /* LaunchScreen.xib */,
 				735888E31AABD16E00A07D5C /* KindNest.xcdatamodeld */,
@@ -287,6 +290,7 @@
 				735888E71AABD16E00A07D5C /* ViewController.swift in Sources */,
 				735888E21AABD16E00A07D5C /* AppDelegate.swift in Sources */,
 				735888E51AABD16E00A07D5C /* KindNest.xcdatamodeld in Sources */,
+				73DEA1F01AAD2F2100A4712A /* TableViewController.swift in Sources */,
 				7358892E1AAC0CF600A07D5C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +500,7 @@
 				735889001AABD16F00A07D5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		735889011AABD16F00A07D5C /* Build configuration list for PBXNativeTarget "KindNestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				735889031AABD16F00A07D5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

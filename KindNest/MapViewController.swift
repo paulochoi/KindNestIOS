@@ -43,6 +43,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         var urlRequest = NSURLRequest(URL: url!)
         NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
             response,data,error in
+            println("im here")
 
             var image : UIImage
 

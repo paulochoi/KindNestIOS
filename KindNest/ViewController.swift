@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                     println("User logged in through Facebook!")
                     
                     self.copyUser = user
-                    
+
                     
                     println(self.copyUser)
                     
@@ -81,8 +81,7 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "goToMap" {
-            var seguetoMap = segue.destinationViewController as MapViewController
-            println("im here")
+            var seguetoMap = segue.destinationViewController as UITabBarController
             //seguetoMap.currentUser = copyUser
         }
         else {
